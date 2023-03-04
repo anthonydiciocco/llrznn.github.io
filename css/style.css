@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+   font-size: 16px;
+   font-family: 'Heebo', sans-serif;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background-color: rgb(255, 255, 255);
+}
+
+header {
+   height: 5em;
+   position: relative;
+   z-index: 1;
+   box-shadow: 0px 1px 6px -3px rgba(0, 0, 0, 0.8);
+}
+
+#logo {
+   border: 1px solid rgba(128, 128, 128, 0.2);
+   position: absolute;
+   width: 6em;
+   max-width: 100%;
+   margin-left: 12vw;
+   padding-left: 1.5em;
+   padding-right: 1.5em;
+   padding-top: 0.85em;
+   padding-bottom: 1.85em;
+   background-color: white;
+}
+
+p {
+   margin: 0;
+}
+
+.carousel_slide {
+   box-shadow: 0px 1px 6px -3px rgba(0, 0, 0, 0.8);
+   position: relative;
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.slide_image {
+   box-shadow: inset 0px 10px 0px 50px #000000;
+   display: block;
+   width: 100%;
+}
+
+.slide_info {
+   position: absolute;
+   white-space: nowrap;
+}
+
+.slide_info > p {
+   position: absolute;
+   color: white;
+   transition: 0.2s ease;
+}
+
+.slide_info:hover > p {
+   color: rgb(207, 19, 27);
+   transition: 0.2s ease;
+}
+
+.slide_info > p > img {
+   width: 0.5em;
+   margin-right: 0.1em;
+}
+
+.slide_info__slogan {
+   bottom: 1.8em;
+   left: 2.78em;
+   font-weight: 600;
+   font-size: 3.25vw;
+}
+
+.slide_info__model {
+   bottom: 2.25em;
+   left: 6.3em;
+   font-weight: 500;
+   font-size: 1.75vw;
+}
+
+.section_title {
+   margin-top: 0.7em;
+   margin-bottom: 0.5em;
+   font-weight: 600;
+   font-size: 2.5vw;
+   margin-left: 4em;
+   letter-spacing: -1px;
+}
+
+.gallery_grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 0px;
+}
+
+.gallery_items {
+   position: relative;
+   box-shadow: inset 0px 0px 300px 185px rgba(24, 24, 24, 0.1);
+}
+
+.gallery_items > img {
+   max-width: 100%;
+   display: block;
+   min-width: 100%;
+   position: relative;
+   z-index: -1;
+}
+
+.gallery__car_name {
+   position: absolute;
+   top: 0.25em;
+   left: 1.15em;
+   bottom: 0;
+   font-weight: 500;
+   color: white;
+   font-size: 2.25em;
+}
+
+.gallery__item_button_left {
+   position: absolute;
+   bottom: 2em;
+   left: 2.5em;
+   padding: 0.75em;
+   padding-right: 1.5em;
+   padding-left: 1.5em;
+   background-color: white;
+   color: black;
+   transition: 0.2s ease;
+}
+
+.gallery__item_button_left:hover {
+   background-color: rgb(207, 19, 27);
+   color: white;
+   transition: 0.2s ease;
+}
+
+.gallery__item_button_right:hover {
+   border-color: rgb(207, 19, 27);
+   color: rgb(207, 19, 27);
+   transition: 0.2s ease;
+}
+
+.gallery__item_button_right {
+   position: absolute;
+   bottom: 2em;
+   left: 13em;
+   padding: 0.75em;
+   padding-right: 1.5em;
+   padding-left: 1.5em;
+   border: 0.1em solid white;
+   color: rgb(255, 255, 255);
+   transition: 0.2s ease;
+}
+
+@media only screen and (max-width: 1200px) {
+   .gallery_grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+img::selection {
+   background: transparent;
+}
+
+::-moz-selection {
+   /* Code for Firefox */
+   background-color: rgba(207, 19, 28, 0.9);
+   color: rgb(255, 255, 255);
+}
+
+::selection {
+   background-color: rgba(207, 19, 27, 0.9);
+   color: rgb(255, 255, 255);
+}
