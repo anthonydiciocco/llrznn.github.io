@@ -5,6 +5,10 @@
    font-family: 'Heebo', sans-serif;
 }
 
+* {
+   font-family: 'Heebo', sans-serif;
+}
+
 body {
    margin: 0;
    padding: 0;
@@ -12,12 +16,12 @@ body {
 }
 
 header {
-   height: 7.8rem;
+   height: 7.7rem;
    position: relative;
    z-index: 1;
    padding-left: 9vw;
    padding-right: 9vw;
-   box-shadow: 0px 0px 1px 0px #000000;
+   border-bottom: 1px solid rgba(128, 128, 128, 0.2);
 }
 
 header > * {
@@ -44,13 +48,14 @@ header > * {
 }
 
 .button_container > button {
-   font-size: 0.95rem;
+   font-size: 1rem;
    border: none;
    margin-right: 0.25rem;
    margin-left: 0.25rem;
    background-color: white;
    padding-top: 1.2rem;
-   padding-bottom: 2rem;
+   padding-bottom: 1.35rem;
+   font-weight: 300;
 }
 
 .button_container > button:hover {
@@ -76,7 +81,6 @@ p {
 }
 
 .slide_image {
-   box-shadow: inset 0px 10px 0px 50px #000000;
    display: block;
    width: 100%;
 }
@@ -110,7 +114,7 @@ p {
 }
 
 .slide_info__model {
-   bottom: 2.25em;
+   bottom: 2.4em;
    left: 6.3em;
    font-weight: 500;
    font-size: 1.75vw;
@@ -173,7 +177,7 @@ p {
 }
 
 .gallery__item_button_right:hover {
-   border-color: rgb(207, 19, 27);
+   outline-color: rgb(207, 19, 27);
    color: rgb(207, 19, 27);
    transition: 0.2s ease;
 }
@@ -185,7 +189,8 @@ p {
    padding: 0.75em;
    padding-right: 1.5em;
    padding-left: 1.5em;
-   border: 0.1em solid white;
+   outline: 1px solid white;
+   outline-offset: -1px;
    color: rgb(255, 255, 255);
    transition: 0.2s ease;
 }
